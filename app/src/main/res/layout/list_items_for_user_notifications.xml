@@ -26,7 +26,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/ambulance_driver_name_textView"
+                    android:id="@+id/user_name_textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
@@ -95,7 +95,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
                     android:layout_marginRight="100dp"
-                    android:text="100 m       "
+                    android:text="1000 m    "
                     android:textColor="@color/blackColor"
                     android:textSize="16sp" />
 
@@ -106,7 +106,7 @@
                     android:src="@drawable/get_location" />
 
                 <TextView
-                    android:id="@+id/get_locaion"
+                    android:id="@+id/get_location"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
