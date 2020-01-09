@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#833EE93E">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#3B5BCA5B"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ambulance_driver_name_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="Ibrahim"
+                    android:textColor="@color/blackColor"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/user_location_imageView"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/location" />
+
+                <TextView
+                    android:id="@+id/user_city_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="100dp"
+                    android:text="Peshawar"
+                    android:textColor="@color/blackColor"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/user_mobile_image_view"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/mobile_icon" />
+
+                <TextView
+                    android:id="@+id/user_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="0dp"
+                    android:inputType="phone"
+                    android:text="03339601461"
+                    android:textColor="@color/blackColor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ambulance_distance_image_view"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/distance_icon" />
+
+                <TextView
+                    android:id="@+id/user_distance_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="100dp"
+                    android:text="100 m       "
+                    android:textColor="@color/blackColor"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/get_location_image_view"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/get_location" />
+
+                <TextView
+                    android:id="@+id/get_locaion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="0dp"
+                    android:inputType="phone"
+                    android:text="Get Location"
+                    android:textColor="@color/blackColor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/available_button_for_driver"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/driver_detail_button"
+                    android:text="Available"
+                    android:textColor="@color/whiteText" />
+
+                <Button
+                    android:id="@+id/hired_button_for_driver"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/driver_detail_button"
+                    android:text="Hired"
+                    android:textColor="@color/whiteText" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
