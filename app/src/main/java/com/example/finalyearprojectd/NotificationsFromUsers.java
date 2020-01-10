@@ -6,6 +6,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.ContextMenu;
+import android.view.Menu;
+import android.view.MenuItem;
 
 public class NotificationsFromUsers extends AppCompatActivity implements NotificationsFromUsersAdapter.OnNoteListener
 {
@@ -29,6 +32,27 @@ public class NotificationsFromUsers extends AppCompatActivity implements Notific
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.change_profile_option_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.change_profile:
+                // do something
+                Intent changerProfile = new Intent(getApplicationContext(),ChangeProfile.class);
+                startActivity(changerProfile);
+                return true;
+                default:
+                    return super.onContextItemSelected(item);
+
+        }
+
+    }
+
+    @Override
     public void onNoteClick(int position) {
         Intent jumpToUserGetLocation =  new Intent(getApplicationContext(),GoogleMapUserLocation.class);
         startActivity(jumpToUserGetLocation);
@@ -38,4 +62,5 @@ public class NotificationsFromUsers extends AppCompatActivity implements Notific
     public void onPointerCaptureChanged(boolean hasCapture) {
 
     }
+
 }
